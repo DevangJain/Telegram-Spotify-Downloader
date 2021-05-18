@@ -18,18 +18,17 @@ def setup_logging():
  
 def start(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
-🌹 Song DL 😍
+✳️ Welcome to Song Sender 🎵 ✳️
         
-🍭  🎀  Featureʂ 🎀  🍭     
-* Can download any spotify song.
-* Can download any spotify playlist-(❌BETA-SLOW❌)
-* Premium song supported
-* Free Lol!
+🔘 Features 🔘
+☑️ *Can download Spotify Songs.* 
+🆕 *Can download any spotify playlist.*
+☑️ *Premium songs supported.*
+☑️ *Free 😍*
 
-* 𝕌𝕊𝔼 /help 𝔽𝕆ℝ 𝕄𝕆ℝ𝔼 𝕀ℕ𝔽𝕆*
-Made with💚by @JeBots
+Made in 🇮🇳 
 
-[https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg]
+⚜️ By @JeBots ⚜️
 """
 )
 
@@ -39,9 +38,9 @@ Made with💚by @JeBots
      
 def help(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
-🍮♠ ʊֆǟɢɛ ♠🍮\n
-*SINGLE  - Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 "Song url"
-*PLAYLIST- Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 "Playlist url" (❌BETA-SLOW❌)""")
+Commands 🔻\n
+*✳️ Single  - Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 "Song url"
+*🆕 Playlist - Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 "Playlist url" """)
     
 def error(update: Update, context: CallbackContext, error):
     logger.warning('Update "%s" caused error "%s"', update, error)
