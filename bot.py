@@ -42,6 +42,10 @@ keyboard = [[
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
+
+ update.message.reply_text('Please choose:', reply_markup=reply_markup)
+    pass
+
      
 def help(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
