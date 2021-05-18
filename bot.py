@@ -32,19 +32,33 @@ def start(update: Update, context: CallbackContext):
 Made with💚by @phantomxhawk
 
 [https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg]
-""")
+""", keyboard = 
+        [
+            InlineKeyboardButton(
+                "➕ Add me to a Group ➕",
+                url="http://t.me/GpyTranslatorBot?startgroup=tr",
+            )
+        ],
+        [
+            InlineKeyboardButton("", switch_inline_query_current_chat=" "),
+            InlineKeyboardButton(
+                "Report Bugs 💬", url="https://t.me/DeVAJe"),
+        ],
+        [
+            InlineKeyboardButton("Help 🗣️", callback_data="help"),
+            InlineKeyboardButton("Developer 💻", callback_data=b"Credits"),
+        ],
+        [
+            InlineKeyboardButton("📣 Channel", url="https://t.me/JeBots"),
+            InlineKeyboardButton("Group 👥", url="https://t.me/JeSupport"),
+        ], reply_markup = InlineKeyboardMarkup(keyboard)
+)
 
-keyboard = [[
-        InlineKeyboardButton("Option 1", callback_data='1'),
-        InlineKeyboardButton("Option 2", callback_data='2')
-    ], [InlineKeyboardButton("Option 3", callback_data='3')]]
+credits = """Developer 💻
+ • @DeVAJe """
 
 
-    reply_markup = InlineKeyboardMarkup(keyboard)
 
-
- update.message.reply_text('Please choose:', reply_markup=reply_markup)
-    pass
 
      
 def help(update: Update, context: CallbackContext):
