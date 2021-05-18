@@ -11,7 +11,7 @@ def botify(update: Update, context: CallbackContext):
     download_path = os.getcwd() + "/" + str(uuid.uuid4())
 
     context.bot.sendChatAction(chat_id =update.effective_chat.id,  action = "typing")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f"📥𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠📤")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 🔁")
     
 
     context.bot.sendChatAction(chat_id =update.effective_chat.id,  action = "record_video")
