@@ -5,8 +5,6 @@ from handlers import sender
 from handlers.helpers import spotifydl
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
-from telegram import InlineKeyboardMarkup, InlineKeyboardbutton
-
 
 
 logger = logging.getLogger(__name__)
