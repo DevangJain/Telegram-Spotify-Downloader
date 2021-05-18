@@ -20,7 +20,7 @@ def setup_logging():
  
 def start(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
--·=»‡«=·- ֆքօȶɨʄʏ ɖօառʟօǟɖ ɮօȶ -·=»‡«=·-
+🌹 Song DL 😍
         
 🍭  🎀  Featureʂ 🎀  🍭     
 * Can download any spotify song.
@@ -29,33 +29,11 @@ def start(update: Update, context: CallbackContext):
 * Free Lol!
 
 * 𝕌𝕊𝔼 /help 𝔽𝕆ℝ 𝕄𝕆ℝ𝔼 𝕀ℕ𝔽𝕆*
-Made with💚by @phantomxhawk
+Made with💚by @JeBots
 
 [https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg]
-""", keyboard = 
-        [
-            InlineKeyboardButton(
-                "➕ Add me to a Group ➕",
-                url="http://t.me/GpyTranslatorBot?startgroup=tr",
-            )
-        ],
-        [
-            InlineKeyboardButton("", switch_inline_query_current_chat=" "),
-            InlineKeyboardButton(
-                "Report Bugs 💬", url="https://t.me/DeVAJe"),
-        ],
-        [
-            InlineKeyboardButton("Help 🗣️", callback_data="help"),
-            InlineKeyboardButton("Developer 💻", callback_data=b"Credits"),
-        ],
-        [
-            InlineKeyboardButton("📣 Channel", url="https://t.me/JeBots"),
-            InlineKeyboardButton("Group 👥", url="https://t.me/JeSupport"),
-        ], reply_markup = InlineKeyboardMarkup(keyboard)
+"""
 )
-
-credits = """Developer 💻
- • @DeVAJe """
 
 
 
