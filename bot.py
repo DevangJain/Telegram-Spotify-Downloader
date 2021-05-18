@@ -5,6 +5,7 @@ from handlers import sender
 from handlers.helpers import spotifydl
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
+from telegram import InlineKeyboardMarkup, InlineKeyboardbutton
 
 
 
@@ -32,6 +33,15 @@ Made with💚by @phantomxhawk
 
 [https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg]
 """)
+
+keyboard = [[
+        InlineKeyboardButton("Option 1", callback_data='1'),
+        InlineKeyboardButton("Option 2", callback_data='2')
+    ], [InlineKeyboardButton("Option 3", callback_data='3')]]
+
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
      
 def help(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
