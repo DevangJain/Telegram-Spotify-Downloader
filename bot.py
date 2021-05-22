@@ -17,7 +17,7 @@ def setup_logging():
     )
  
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="""<b>
+    context.bot.send_message(chat_id=update.effective_chat.id, text=""<b>
 ✳️Welcome to Song Sender 🎵 ✳️
         
 🔘 Features 🔘
@@ -29,7 +29,7 @@ def start(update: Update, context: CallbackContext):
 **Made in 🇮🇳** 
 
 ⚜️ *By @PyJeBots* ⚜️ 
-</b>"""
+</b>""
 )
 
 
