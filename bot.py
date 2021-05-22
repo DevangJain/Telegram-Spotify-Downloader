@@ -18,17 +18,19 @@ def setup_logging():
  
 def start(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
-✳️ Welcome to Song Sender 🎵 ✳️
+</B>
+✳️Welcome to Song Sender 🎵 ✳️
         
 🔘 Features 🔘
-☑️ *Can download Spotify Songs.* 
-🆕 *Can download any spotify playlist.* (〽️ Slow 〽️)
-☑️ *Premium songs supported.*
-☑️ *Free 😍*
+☑️ **Can download Spotify Songs.** 
+🆕 **Can download any spotify playlist.** (〽️ Slow 〽️)
+☑️ **Premium songs supported.**
+☑️ **Free 😍**
 
-*Made in 🇮🇳* 
+**Made in 🇮🇳** 
 
-⚜️ *_By @JeBots_* ⚜️
+⚜️ *By @PyJeBots* ⚜️ 
+</b>
 """
 )
 
