@@ -17,8 +17,8 @@ def setup_logging():
     )
  
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=""
-Welcome to Song Sender 🎵 ✳️
+    context.bot.send_message(chat_id=update.effective_chat.id, text="""
+Welcome to Spotify Song Sender ✳️
         
 🔘 Features 🔘
 ☑️ Can download Spotify Songs.
@@ -29,7 +29,7 @@ Welcome to Song Sender 🎵 ✳️
 Made in 🇮🇳
 
 ⚜️ By @PyJeBots ⚜️ 
-""
+"""
 )
 
 
