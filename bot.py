@@ -17,19 +17,19 @@ def setup_logging():
     )
  
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=""<b>
+    context.bot.send_message(chat_id=update.effective_chat.id, text=""
 ✳️Welcome to Song Sender 🎵 ✳️
         
 🔘 Features 🔘
-☑️ **Can download Spotify Songs.** 
-🆕 **Can download any spotify playlist.** (〽️ Slow 〽️)
-☑️ **Premium songs supported.**
-☑️ **Free 😍**
+☑️ Can download Spotify Songs.
+🆕 Can download any spotify playlist. (〽️ Slow 〽️)
+☑️ Premium songs supported.
+☑️ Free 😍
 
-**Made in 🇮🇳** 
+Made in 🇮🇳
 
-⚜️ *By @PyJeBots* ⚜️ 
-</b>""
+⚜️ By @PyJeBots ⚜️ 
+""
 )
 
 
@@ -39,8 +39,8 @@ def start(update: Update, context: CallbackContext):
 def help(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
 Commands 🔻\n
-✳️ *Single*  - Type ```/𝙨𝙥𝙤𝙩𝙞𝙛𝙮 Song URL```
-🆕 *Playlist* - Type ```/𝙨𝙥𝙤𝙩𝙞𝙛𝙮 Playlist URL``` (〽️ Slow 〽️)
+✳️ Single  - Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 Song URL
+🆕 Playlist - Type /𝙨𝙥𝙤𝙩𝙞𝙛𝙮 Playlist URL(〽️ Slow 〽️)
 """)
     
 def error(update: Update, context: CallbackContext, error):
